@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<!-- change v5 -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Кафе пицеррия "Star Rock"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Star Rock Пицеррия!">
+    <link rel='shortcut icon' href='assets/img/ambience.jpg' type='image/x-icon' />
+    <meta name="keywords" content="Пицца, Пицеррия">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<style>
+    @media only screen and (max-width: 600px) {
+        .contact {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bgcolhead">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+                <ul class="navbar-nav ml-lg-5">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myTabContent">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bottom">Связь с нами</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:044-2987-4444">Заказывайте сейчас!</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="contact">
+            <ul>
+                <li class="mr-lg-5 d-none d-lg-block">
+                    <span id="order">Звоните и заказывайте по телефону: </span>
+                    <br>
+                    <span id="call">8(017) 356-77-85</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- nav bar -->
+
+ 
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/ambienceslider1.jpg" class="d-block w-100" alt="Star Rock Ambience">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/ambienceslider2.jpg" class="d-block w-100" alt="Star Rock Ambience">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/ambienceslider3.jpg" class="d-block w-100" alt="Star Rock Ambience">
+                </div>
+                <div class="main-text hidden-xs">
+                    <div class="col-md-12 text-center">
+                        <h5>
+                           Star Rock</h5>
+                        <p>
+                            ПИЦЕРИЯ
+                        </p>
+                    </div>
+                </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Следующий</span>
+            </a>
+        </div>
+      </div>
+
+        <div class="bg-danger">
+            <ul class="nav justify-content-center" id="myTab" role="tablist" style="border-radius: 0px;">
+                <!-- Пицца -->
+                <li class="nav-item  dropdown pointer">
+                    <a class="nav-link active  bg-danger text-light dropdown-toggle " data-toggle="dropdown" role="" aria-haspopup="true" aria-expanded="false" aria-controls="regular pizza">Питцы</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#regular_pizza" role="button" aria-expanded="false" aria-controls="regular_pizza">Класическая питца</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#italian_classic_pizza" role="button" aria-expanded="false" aria-controls="italian_classic_pizza">Итальянская питца</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#signature_pizza" role="button" aria-expanded="false" aria-controls="signature_pizza">Фирменная питца</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#grilled_chicken_pizza" role="button" aria-expanded="false" aria-controls="grilled_chicken_pizza">Пицца с курицей на гриле</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#chicken_sausage_pizza" role="button" aria-expanded="false" aria-controls="chicken_sausage_pizza">Питца с колбасками</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#hawaiian_pizza" role="button" aria-expanded="false" aria-controls="hawaiian_pizza">Гавайская питца</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#imported_meat_pizza" role="button" aria-expanded="false" aria-controls="imported_meat_pizza">Специальная мясная питца(свинина)</a>
+                    </div>
+                </li>
+                
+
+                <!-- Сэндвичи -->
+                <li class="nav-item">
+                    <a class="nav-link  bg-danger text-light" id="m" onclick="supert()" data-toggle="collapse" href="#sandwiches" role="tab" aria-haspopup="true" aria-expanded="false" aria-controls="" style="">Сэндвичи</a>
+                </li>
+                <!-- Перекус -->
+                <li class="nav-item dropdown pointer">
+                    <a class="nav-link bg-danger text-light dropdown-toggle" id="sides-tab" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Перекус</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#starters" role="button" aria-expanded="false" aria-controls="starters">Закуски</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#salads" role="button" aria-expanded="false" aria-controls="salads">Салаты</a>
+                    </div>
+                </li>
+                <!-- Бургеры -->
+                <li class="nav-item ">
+                    <a class="nav-link text-light bg-danger" data-toggle="collapse" href="#burgers" role="tab" aria-expanded="false" aria-controls="burgers">Бургеры</a>
+                </li>
+                <!-- Паста -->
+                <li class="nav-item r">
+                    <a class="nav-link text-light bg-danger" data-toggle="collapse" href="#pastas" role="tab" aria-expanded="false" aria-controls="pastas">Паста</a>
+                </li>
+                <!-- Напитки -->
+                <li class="nav-item dropdown pointer">
+                    <a class="nav-link bg-danger text-light dropdown-toggle" id="drinks-tab" data-toggle="dropdown" role="tab" aria-haspopup="true" aria-expanded="false">Напитки</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#refreshing_cooler" role="button" aria-expanded="false" aria-controls="refreshing_cooler">Освежающие напитки</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#milkshakes" role="button" aria-expanded="false" aria-controls="milkshakes">Молочные коктели</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#smooties" role="button" aria-expanded="false" aria-controls="smooties">Смузи</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#hot_beverages" role="button" aria-expanded="false" aria-controls="hot_beverages">Горячие напитки</a>
+                        <a class="dropdown-item text-danger" data-toggle="collapse" href="#cold_beverages" role="button" aria-expanded="false" aria-controls="cold_beverages">Холодные напитки</a>
+                    </div>
+                </li>
+                <!-- Десерты -->
+                <li class="nav-item ">
+                    <a class="nav-link text-light bg-danger" data-toggle="collapse" href="#desserts" role="tab" aria-expanded="false" aria-controls="desserts">Десерты</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown-content" id="myTabContent">
+
+            <div id="accordion">
+                <!-- Пицца content -->
+                <div class="collapse pizza" id="regular_pizza" data-parent="#accordion">
+                    <div class="bg-danger container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 ">
+
+                                <img src="assets\img\pizza.jpg" class="img-fluid minpic">
+                            </div>
+                            <div class="col-sm-12 col-md-6 we" style="">
+                                <h3 class="text-center mt-3 " style="color: white;">Класическая питца (только 26 см)</h3>
+                                <hr class="hor-line">
+                                <table class="table textw">
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Маргаритта</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Питца с грибами и луком</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца с грибами и перцем халапеньо</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца с грибами и оливками</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца со сладким перцем и луком</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца со сладким перцем и помидором</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца со сладким перцем и халапеньо</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 order-2 order-md-1 col-md-6 we">
+
+                                <table class="table table-borderless textw ">
+
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца со сладким перцем и кукурузой</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца со сладким перцем и грибами</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца с кукурузой и луком</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца с кукурузой и помидором</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца с кукурузой и перцем халапеньо</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с курицей и кукурузой</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с курицей и луком</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-12 order-1 order-md-2 col-md-6">
+                                <img src="assets\img\backpizza.jpg" class="img-fluid minpic">
+                            </div>
+                        </div>
+                        <div class="row" style="">
+                            <div class="col-sm-12 col-md-6" style="height: auto;">
+                                <img src="assets\img\Pizza1.jpg" class="img-fluid minpic">
+                            </div>
+                            <div class="col-sm-12 col-md-6 we">
+
+                                <table class="table textw">
+                                    <tbody>
+
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с курицей и оливками</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с курицей и перцем халапеньо</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с курицей и паприкой</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с курицей и сладким перцем</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с курицей и грибами</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с пеперонни и луком</td>
+                                            <td>24,90 руб</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="assets\SVG\NON.svg">Пицца с сосисками и перцем халапеньо</td>
+                                            <td>23,90 руб</td>
+                                        </tr>
+
+                                        <tr>
+
+                                            <td><img src="assets\SVG\NON.svg">Пицца с колбасой и кукурузой</td>
+                                            <td>22,90 руб</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- новое меню-->
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse pizza" id="italian_classic_pizza" data-parent="#accordion">
+                    <div class="bg-danger container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <img src="assets\img\IPizza.jpg" class="img-fluid minpic">
+                            </div>
+                            <div class="col-sm-12 col-md-6 we">
+                                <h3 class="text-center mt-3 pb-2" style="color: white;">Итальянская Пицца
+                           <hr class="hor-line">
+                          <br>
+                        </h3>
+
+                                <table class="table textw">
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Маргаритта</td>
+                                            <td>32см-25,90 руб &nbsp; &nbsp; 36см-27,90 руб</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td><img src="assets\SVG\veg.svg">Маргарита с песто из базилика</td>
+                                            <td>32см-25,90 руб &nbsp; &nbsp; 36см-27,90 руб</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="collapse pizza" id="signature_pizza" data-parent="#accordion">
+
+                    <div class="bg-danger container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <img src="assets\img\Pizza3.jpg" class="img-fluid minpic">
+                            </div>
+                            <div class="col-sm-12 col-md-6 we">
+                                <h3 class="text-center mt-3 pb-2" style="color: white;">Фирменная питца
+                          <br>
+                       </h3>
+                                <hr class="hor-line">
+
+                                <table class="table textw pad5">
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца с брокколи и сыром</td>
+                                            <td>32см-25,90 руб &nbsp; &nbsp; 36см-27,90 руб</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="assets\SVG\veg.svg">Пицца с болгарским перцем и сыром</td>
+                                            <td>32см-25,90 руб &nbsp; &nbsp; 36см-27,90 руб</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse pizza" id="grilled_chicken_pizza" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 ">
+                            <img src="assets\img\Pizza4.png" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 we bg-danger">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Пицца курочка-гриль
+                          <br>
+                        </h3>
+                            <hr class="hor-line">
+                            <table class="table textw">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Курочка гриль с сыром</td>
+                                        <td>32см-27,90 руб &nbsp; &nbsp; 36см-30,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Курочка гриль с грибами</td>
+                                        <td>32см-27,90 руб &nbsp; &nbsp; 36см-30,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Курочка гриль с полгарским перцем</td>
+                                        <td>32см-27,90 руб &nbsp; &nbsp; 36см-30,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Курочка гриль с брокколи</td>
+                                        <td>32см-27,90 руб &nbsp; &nbsp; 36см-30,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse pizza" id="chicken_sausage_pizza" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 ">
+                            <img src="assets\img\Pizza5.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 we bg-danger">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Пицца с курицой и колбасой
+                          <br>
+                        </h3>
+                            <hr class="hor-line">
+                            <table class="table textw">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Пицца с курицой, колбасой и сыром</td>
+                                        <td>32см-25,90 руб &nbsp; &nbsp; 36см-28,90руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Пицца с колбасой, сыром, чесноком и перцем чили</td>
+                                        <td>32см-28,90 руб &nbsp; &nbsp; 36см-32,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Пицца с колбасой и сыром барбекю</td>
+                                        <td>32см-28,90 &nbsp; &nbsp; 36см-31,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse pizza" id="hawaiian_pizza" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 ">
+                            <img src="assets\img\Pizza6.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 we bg-danger" style="">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Гавайская питца
+                          <br>
+                       </h3>
+                            <hr class="hor-line">
+                            <table class="table textw">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Гавайская пицца с курицей</td>
+                                        <td>32см-28,90 руб &nbsp; &nbsp; 36см-32,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Гавайская пицца с беконом</td>
+                                        <td>32см-28,90 руб &nbsp; &nbsp;36см-33,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse pizza" id="imported_meat_pizza" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 ">
+                            <img src="assets\img\Pizza7.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 we bg-danger" style="">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Мясная питца(свинина)
+                          <br>
+                       </h3>
+                            <hr class="hor-line">
+                            <table class="table textw">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Пицца с беконом и ветчиной</td>
+                                        <td>32см-28,90 руб &nbsp; &nbsp; 36см-33,90 руб</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Пицца с пепперони и ветчиной</td>
+                                        <td>32см-28,90 руб &nbsp; &nbsp; 36см-33,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Пицца с беконом и пепперони</td>
+                                        <td>32см-28,90 руб &nbsp; &nbsp; 36см-33,90 руб</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Пицца с беконом, колбасой и ветчиной</td>
+                                        <td>32см-28,90 руб &nbsp; &nbsp; 36см-33,90 руб</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Закуски -->
+
+                <div class="collapse sides" id="starters" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img class="img-fluid minpic" src="assets\img\backzac1.jpg">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Закуски
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw ">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Картофель фри</td>
+                                        <td>5,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Картофель фри с томатным соусом</td>
+                                        <td>6,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Картофель фри с сырным соусом</td>
+                                        <td>6,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Картофель фри по деревенски</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Запеченный хлеб (подается с чесночным майонезом)
+                         </h3>
+                            <hr class="hor-line">
+
+                            <table class="table table-borderless textw pad5">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Чесночный хлеб</td>
+                                        <td>6,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Сырный чесночный хлеб</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Чесночный хлеб с соусом тартар</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Чесночный хлеб с соусом тартар и сыром</td>
+                                        <td>8,90 руб</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <img class="img-fluid minpic" src="assets\img\backzak2.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Салаты -->
+
+                <div class="collapse sides" id="salads" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img class="img-fluid minpic" src="assets\img\backsalat.jpg">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Салаты
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw ">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Салат с бальзамической заправкой</td>
+                                        <td>6,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Салат с майонезной заправкой</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Гавайский салат</td>
+                                        <td>8,90 руб</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Паста -->
+
+                <div class="collapse pasta" id="pastas" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img class="img-fluid minpic" src="assets\img\backpasta1.jpg">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Итальянская паста
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw pad5">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Паста спагетти с красным соусом</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Паста спагетти с белым сырным соусом</td>
+                                        <td>8,90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Бургеры -->
+
+                <div class="collapse burger" id="burgers" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img class="" src="assets\img\backburger.jpg" style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Бургеры
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw pad5">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Бургер с сыром</td>
+                                        <td>11,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Мясной бургер</td>
+                                        <td>12,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сырный куриный бургер</td>
+                                        <td>12,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Бургер с сыром и беконом</td>
+                                        <td>12,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Куриный бургер с чесноком и перцем Чили</td>
+                                        <td>13,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Бургер с беконом, чесноком и перцем чили</td>
+                                        <td>14,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Бургер с курицей в соусе терияки</td>
+                                        <td>13,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Бургер с курицей в кисло-сладком соусе</td>
+                                        <td>13,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Бургер барбекю</td>
+                                        <td>13,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Бургер барбекю с сыром</td>
+                                        <td>13,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Сэндвичи -->
+
+                <div class="collapse sandwich" id="sandwiches" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 ">
+                            <img src="assets\img\sandwich.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 we bg-danger" style="">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Сэндвичи с сыром на гриле
+                          </h3>
+                            <hr class="hor-line">
+                            <table class="table textw">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Сэндвич с грибами и кукурузой</td>
+                                        <td>5,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Сэндвич с кукурузой</td>
+                                        <td>5,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Сэндвич с болгарским перцем и кукурузой</td>
+                                        <td>5,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Сэндвич цезарь</td>
+                                        <td>5,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Сэндвич с лососем</td>
+                                        <td>6,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич гриль с курицей в соусе тереяки</td>
+                                        <td>6,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич барбекю с курицей в соусе тартар</td>
+                                        <td>6,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 order-2 order-md-1 col-md-6 we bg-danger">
+
+                            <table class="table table-borderless textw pad5">
+                                <tbody>
+
+                                    <tr>
+
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич с курицей и грибами</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич с курицей-гриль и колбасой</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич с курицей-гриль с сыром и колбасой</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич с колбасой и тунцом</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич с беконом и колбасой</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич с колбасой и ветчиной</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\NON.svg">Сэндвич с беконом и ветчиной</td>
+                                        <td>7,90 руб</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-12 order-1 order-md-2 col-md-6">
+                            <img src="assets\img\backsandwich.jpg" class="img-fluid minpic">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Напитки -->
+
+                <div class="collapse drinks" id="refreshing_cooler" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img src="assets\img\backdrinks.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 we bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Освежающие напитки
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw pad5">
+                                <tbody>
+                                    <tr>
+                                        <td> <img src="assets\SVG\veg.svg">Мохито</td>
+                                        <td>3,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="assets\SVG\veg.svg">Клубничный мохито</td>
+                                        <td>3,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="assets\SVG\veg.svg">Холодный чай с лимоном</td>
+                                        <td>3,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="assets\SVG\veg.svg">Мохито Голубая лагуна</td>
+                                        <td>3,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="assets\SVG\veg.svg">Мохито с зеленым яблоком</td>
+                                        <td>3,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="assets\SVG\veg.svg">Холодный кофе</td>
+                                        <td>2,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="assets\SVG\veg.svg">Арбузный мохито</td>
+                                        <td>3,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse drinks" id="milkshakes" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img src="assets\img\milk.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Молочные коктели
+                         </h3>
+                            <hr class="hor-line">
+
+                            <table class="table table-borderless textw ">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Французский молочный коктейль с ванилью</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Молочный коктейль "Баноффи"</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Молочный коктейль из клубники</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Молочный коктейль с шоколадной помадкой</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Молочный коктейль с кокосовой стружкой</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Кофейный молочный коктейль</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Молочный коктейль из банана и мороженного</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Молочный коктейль с Кит-Кат и Нутеллой</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse drinks" id="smooties" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img src="assets\img\smuzi.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Смузи
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw ">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Бананово-клубничный смузи</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Бананово-медовый смузи</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Смузи из яблок и корицы</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse drinks" id="hot_beverages" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img src="assets\img\hot.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Горячие напитки
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Мятно-лимонный чай</td>
+                                        <td>2,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Черный кофе</td>
+                                        <td>2,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Горячий шоколад</td>
+                                        <td>3,50 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse drinks" id="cold_beverages" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img src="assets\img\cold.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Холодные напитки
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw ">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Кока-кола/Спрайт/Фанта</td>
+                                        <td>2,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Лимонная газировка</td>
+                                        <td>2,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Кока-кола зеро</td>
+                                        <td>2,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Кока-кола с мятой</td>
+                                        <td>2,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Минеральная вода</td>
+                                        <td>2,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Десерты -->
+
+                <div class="collapse desserts" id="desserts" data-parent="#accordion">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img class="img-fluid minpic" src="assets\img\braun.jpg">
+                        </div>
+                        <div class="col-sm-12 col-md-6 bg-danger we">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Десерты
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw pad5">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Ореховый брауни</td>
+                                        <td>5,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Лимонный пирог</td>
+                                        <td>5,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Ореховый брауни с мороженым</td>
+                                        <td>6,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Кофейно-ореховый торт</td>
+                                        <td>5,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 order-1 col-md-6 order-md-2">
+                            <img src="assets\img\backdeserts.jpg" class="img-fluid minpic">
+                        </div>
+                        <div class="col-sm-12 order-2 col-md-6 order-md-1 we bg-danger">
+                            <h3 class="text-center mt-3 pb-2" style="color: white;">Мороженное
+                         </h3>
+                            <hr class="hor-line">
+                            <table class="table table-borderless textw ">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Наслаждение от Альфонсо с манго</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Ириска</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Нежный кокосовый орех</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Шоколадное мороженное</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Ядренная вишня</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets\SVG\veg.svg">Французская ваниль</td>
+                                        <td>4,90 руб</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="parent">
+<div class=" container main-content">
+
+      <div class="owl-carousel owl-theme">
+          <div class="item">
+            
+              <div class="cardyb">
+                    <a href="#" class="introduce pb-3">
+                        <p class="pr-2 pl-3 pt-4">Обязательно попробуйте это кафе. Еда очень вкусная. Мне понравился салат с курицей и овощной суп. Здесь готовят лучшую итальянскую пасту. Очень понравилась еда и обслуживание. Надеюсь что и в будущем качество будет таким же.
+                        </p>
+                    <div class="information">
+                    <p><img src="leader.png" alt="person" align="left" class="avatar"><span>Гость 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><span class="icons"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></span></p>
+                </div>
+                    </a>
+                </div>
+          </div>
+          <div class="item">
+           <div class="cardyb">
+                    <a href="#" class="introduce pb-3">
+                        <p class="pr-2 pl-3 pt-4">Вкусная паста и мохито.. Хорошее обслуживание, и заказ доставили быстро.. Если вы хотите попробовать оригинальную пасту или пиццу.. Это то, что вам нужно..
+                        </p>
+                    <div class="information">
+                    <p><img src="female.png" alt="person" align="left" class="avatar"><span>Гость 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><span class="icons"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></span></p>
+                </div>
+                    </a>
+                </div>
+          </div>
+          <div class="item">
+             <div class="cardyb">
+                    <a href="#" class="introduce pb-3">
+                        <p class="pr-2 pl-3 pt-4">Мне очень нравится их паста. Цена также близка к разумной. Овощная паста у них тоже очень вкусная, как и пицца 🍕
+                        </p>
+                    <div class="information">
+                    <p><img src="leader.png" alt="person" align="left" class="avatar"><span>Гость 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><span class="icons"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></span></p>
+                </div>
+                    </a>
+                </div>
+          </div>
+          <div class="item">
+             <div class="cardyb">
+                    <a href="#" class="introduce pb-3">
+                        <p class="pr-2 pl-3 pt-4">Прекрасное кафе-пиццерия. Декор и атмосфера действительно располагающие. Пицца - лучшая из всех, что я пробовал. Определенно, это место стоит посетить, и вы не будете разочарованы.
+                        </p>
+                        <div class="information">
+                    <p><img src="male.png" alt="person" align="left" class="avatar"><span>Гость 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><span class="icons"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></span></p>
+                </div>
+                    </a>
+                </div>
+          </div>
+          <div class="item">
+             <div class="cardyb">
+                    <a href="#" class="introduce pb-3">
+                        <p class="pr-2 pl-3 pt-4">Одно из лучших кафе неподалеку от SRM. Пицца и паста здесь самые лучшие. Тонкий хлеб с добавлением сыра придает пицце особый вкус.
+                        </p>
+                    <div class="information">
+                    <p><img src="female.png" alt="person" align="left" class="avatar"><span>Гость 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><span class="icons"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span></span></p>
+                </div>
+                    </a>
+                </div>
+          </div>
+          
+      </div>
+      <div class="owl-theme">
+          <div class="owl-controls">
+              <div class="custom-nav owl-nav"></div>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+        <!-- FOOTER -->
+
+        <footer class="page-footer foot" id="bottom" style=" height: auto;padding-top: 20px;padding-left: 10px;padding-right: 10px;">
+
+            <div class="d-flex" style="padding-left: 5px;">
+
+                <div class="row" style="width: 100%">
+
+                    <div class="col-sm-3 text-center col-12">
+
+                        <div class="contacts" style="width: 100%;padding-left:12px; text-align: center;">
+                            <h3 class="text-center">Связь с нами</h3>
+                            <div class="text-center">
+                                <p><a href="tel:044-29874444" style="color: #808080;text-decoration: none;">8(017) 356-77-85</a>
+                                </p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="https://www.facebook.com/rocknrollcafe.in/"><img class="swiggy" id="t" style="float:right; margin-left: 7px; " src="assets/img/fb.jpg"></a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="https://www.instagram.com/therocknrollcafe/"> <img class="swiggy" id="q" style="float: left; margin-left: -12px;" src="assets/img/insta.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="margin-left:-10px;">
+                                Обратная Связь
+                            </p>
+                        </div>
+                        <!--Контакты-->
+
+                        <div class="time text-center" style="width: 100%;margin-top:20px; ">
+                            <h3 class="text-center">Время работы</h3>
+                            <p style="margin: 0px;">
+                                11:00 - 23:00
+                            </p>
+                            <p>
+                                Приходите к нам в любое время!
+                            </p>
+                        </div>
+                        <!--Время работы-->
+
+                    </div>
+                    <!--Место положение-->
+
+                    <div class="col-sm-6 text-center location col-12">
+
+                        <h3 class="text-center" style="padding-left: 10px;">Местоположение</h3>
+
+                        <div class="maps text-center" style="">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.2175256862874!2d80.04238721464358!3d12.829215590949442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f76dc9bdd1fb%3A0x6269b197f62c91b1!2sThe%20Rock%20N%20Roll%20Cafe%20%26%20Wood%20Oven%20Pizzeria!5e0!3m2!1sen!2sin!4v1569902609151!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-copyright copy text-center" style="width: 100%">
+
+                <label style="width: 100%; color:#808080;" >&copy; 2024 | Developed by BSUIR 281077 <a href="http://msclubsrm.in" style="color:#808080; font-weight: 600;">MSPC</a> </label>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script src="app.js"></script>
+
+</html>
